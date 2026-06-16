@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Rasa Nusantara</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#fff8ef;
+    color:#333;
+}
+
+
+/* NAVBAR */
+
+header{
+    position:fixed;
+    top:0;
+    width:100%;
+    padding:20px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    z-index:1000;
+    background:rgba(0,0,0,0.4);
+}
+
+
+.logo{
+    font-size:28px;
+    font-weight:bold;
+    color:#ffb703;
+}
+
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:25px;
+    font-weight:bold;
+}
+
+
+nav a:hover{
+    color:#ffb703;
+}
+
+
+
+/* HERO */
+
+.hero{
+
+height:100vh;
+
+background:
+linear-gradient(
+rgba(0,0,0,.55),
+rgba(0,0,0,.55)
+),
+url("https://images.unsplash.com/photo-1504674900247-0877df9cc836");
+
+background-size:cover;
+background-position:center;
+
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+
+color:white;
+
+}
+
+
+.hero h1{
+
+font-size:55px;
+animation:fade 1.5s;
+
+}
+
+
+.hero p{
+
+font-size:22px;
+margin:20px;
+
+}
+
+
+.btn{
+
+background:#ff9800;
+color:white;
+padding:15px 35px;
+border-radius:30px;
+text-decoration:none;
+font-weight:bold;
+
+}
+
+
+.btn:hover{
+
+background:#e65100;
+
+}
+
+
+
+/* SECTION */
+
+section{
+
+padding:80px 8%;
+
+}
+
+
+.title{
+
+text-align:center;
+margin-bottom:40px;
+
+}
+
+
+.title h2{
+
+font-size:35px;
+color:#b3541e;
+
+}
+
+
+
+
+/* MENU */
+
+
+.menu{
+
+display:flex;
+justify-content:center;
+gap:30px;
+flex-wrap:wrap;
+
+}
+
+
+.card{
+
+background:white;
+width:300px;
+border-radius:20px;
+overflow:hidden;
+
+box-shadow:0 10px 25px #ddd;
+
+transition:.4s;
+
+}
+
+
+.card:hover{
+
+transform:translateY(-15px);
+
+}
+
+
+
+.card img{
+
+width:100%;
+height:220px;
+object-fit:cover;
+
+}
+
+
+.card-content{
+
+padding:20px;
+
+}
+
+
+.card h3{
+
+color:#b3541e;
+
+}
+
+
+.rating{
+
+color:#ffb703;
+margin:10px 0;
+
+}
+
+
+
+
+
+/* PROMO */
+
+.promo{
+
+background:#b3541e;
+color:white;
+text-align:center;
+border-radius:20px;
+
+}
+
+
+.promo h2{
+
+font-size:40px;
+
+}
+
+
+
+
+
+/* GALERI */
+
+.gallery{
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+
+}
+
+
+.gallery img{
+
+width:100%;
+height:250px;
+object-fit:cover;
+border-radius:15px;
+
+transition:.4s;
+
+}
+
+
+.gallery img:hover{
+
+transform:scale(1.05);
+
+}
+
+
+
+
+
+/* ABOUT */
+
+.about{
+
+display:flex;
+gap:40px;
+align-items:center;
+
+}
+
+
+.about img{
+
+width:45%;
+border-radius:20px;
+
+}
+
+
+
+.about p{
+
+font-size:18px;
+line-height:1.7;
+
+}
+
+
+
+
+
+/* CONTACT */
+
+.contact{
+
+background:#222;
+color:white;
+text-align:center;
+
+}
+
+
+
+
+footer{
+
+background:#111;
+color:white;
+text-align:center;
+padding:20px;
+
+}
+
+
+
+
+/* ANIMATION */
+
+.hidden{
+
+opacity:0;
+transform:translateY(50px);
+transition:1s;
+
+}
+
+
+.show{
+
+opacity:1;
+transform:translateY(0);
+
+}
+
+
+
+
+@keyframes fade{
+
+from{
+opacity:0;
+transform:translateY(50px);
+}
+
+to{
+opacity:1;
+transform:translateY(0);
+}
+
+}
+
+
+
+@media(max-width:700px){
+
+.hero h1{
+
+font-size:35px;
+
+}
+
+
+.about{
+
+flex-direction:column;
+
+}
+
+
+.about img{
+
+width:100%;
+
+}
+
+
+nav{
+
+display:none;
+
+}
+
+}
+
+
+</style>
+
+
+</head>
+
+
+<body>
+
+
+
+<header>
+
+<div class="logo">
+🍴 Rasa Nusantara
+</div>
+
+
+<nav>
+
+<a href="#menu">Menu</a>
+<a href="#promo">Promo</a>
+<a href="#galeri">Galeri</a>
+<a href="#kontak">Kontak</a>
+
+</nav>
+
+
+</header>
+
+
+
+
+<section class="hero">
+
+
+<div>
+
+<h1>
+Nikmati Cita Rasa Indonesia
+</h1>
+
+
+<p>
+Kuliner khas Nusantara dengan rasa autentik dan berkualitas
+</p>
+
+
+<a class="btn" href="#menu">
+Lihat Menu
+</a>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+<section id="menu">
+
+
+<div class="title hidden">
+
+<h2>
+Menu Favorit
+</h2>
+
+<p>
+Pilihan makanan terbaik pelanggan kami
+</p>
+
+</div>
+
+
+
+
+<div class="menu">
+
+
+
+<div class="card hidden">
+
+<img src="https://images.unsplash.com/photo-1601050690597-df0568f70950">
+
+
+<div class="card-content">
+
+<h3>
+Rendang Padang
+</h3>
+
+<div class="rating">
+⭐⭐⭐⭐⭐
+</div>
+
+
+<p>
+Daging sapi lembut dengan bumbu rempah khas Sumatera Barat.
+</p>
+
+
+</div>
+
+</div>
+
+
+
+
+
+<div class="card hidden">
+
+<img src="https://images.unsplash.com/photo-1512058564366-18510be2db19">
+
+
+<div class="card-content">
+
+<h3>
+Nasi Goreng Spesial
+</h3>
+
+<div class="rating">
+⭐⭐⭐⭐⭐
+</div>
+
+
+<p>
+Nasi goreng dengan cita rasa gurih dan aroma rempah.
+</p>
+
+
+</div>
+
+</div>
+
+
+
+
+
+<div class="card hidden">
+
+<img src="https://images.unsplash.com/photo-1529563021893-cc83c992d75d">
+
+
+<div class="card-content">
+
+<h3>
+Sate Ayam
+</h3>
+
+
+<div class="rating">
+⭐⭐⭐⭐⭐
+</div>
+
+
+<p>
+Sate ayam dengan saus kacang khas Indonesia.
+</p>
+
+
+</div>
+
+</div>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+<section id="promo">
+
+
+<div class="promo hidden">
+
+
+<h2>
+🔥 Promo Minggu Ini
+</h2>
+
+
+<p>
+Diskon 25% untuk semua menu Nusantara
+</p>
+
+
+<br>
+
+
+<a class="btn">
+Ambil Promo
+</a>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+<section id="galeri">
+
+
+<div class="title">
+
+<h2>
+Galeri Makanan
+</h2>
+
+</div>
+
+
+
+<div class="gallery">
+
+
+<img src="https://images.unsplash.com/photo-1547592180-85f173990554">
+
+<img src="https://images.unsplash.com/photo-1562565652-a0d8f0c59eb4">
+
+<img src="https://images.unsplash.com/photo-1559314809-0d155014e29e">
+
+<img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd">
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+<section>
+
+
+<div class="about hidden">
+
+
+<img src="https://images.unsplash.com/photo-1559339352-11d035aa65de">
+
+
+<div>
+
+<h2>
+Tentang Kami
+</h2>
+
+<p>
+
+Rasa Nusantara menghadirkan berbagai makanan khas Indonesia
+dengan bahan pilihan dan resep tradisional.
+Kami membawa pengalaman kuliner terbaik dari berbagai daerah
+Indonesia dalam satu tempat.
+
+</p>
+
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+<section id="kontak" class="contact">
+
+
+<h2>
+Hubungi Kami
+</h2>
+
+<p>
+📞 0812-3456-7890
+</p>
+
+<p>
+📧 rasanusantara@gmail.com
+</p>
+
+
+</section>
+
+
+
+
+
+
+<footer>
+
+© 2026 Rasa Nusantara | Kuliner Indonesia
+
+</footer>
+
+
+
+
+
+<script>
+
+
+const observer =
+new IntersectionObserver(entries=>{
+
+entries.forEach(entry=>{
+
+if(entry.isIntersecting){
+
+entry.target.classList.add("show");
+
+}
+
+});
+
+});
+
+
+document.querySelectorAll(".hidden")
+.forEach(el=>observer.observe(el));
+
+
+</script>
+
+
+
+</body>
+</html>
